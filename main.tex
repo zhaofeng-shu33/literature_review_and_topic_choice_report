@@ -105,9 +105,15 @@ $\sqrt{a} - \sqrt{b} > \sqrt{2}$ \cite{abbe2015exact, mossel2016}。这个结果
 Ising 模型是一种刻划节点状态的概率模型 \cite{ising1925beitrag}，最早提出的时候是两状态的。但可以推广至多状态的 Ising 模型 \cite{potts1952some}。
 同时考虑 Ising 模型 和 SBM 模型的研究，最早有学者研究了如何计算定义在SBM模型生成的图上的Ising 模型的配分函数 \cite{liu2017log}。
 后来又有学者研究 了定义在静态图上的 Ising 模型的相变问题 \cite{berthet2019exact} 以及样本复杂度问题等 \cite{ye2020exact}。
+关于该样本复杂度的问题一个应用背景是在用多次民意调查估计选民的政治倾向中所需的调查次数。
 
 在 SBM 和 Ising 复合模型的样本复杂度研究中，SBM 精确恢复的充要条件可以作为一个特例得到 \cite{ye2020exact}。
-因此该复合模型可看作随机块模型的一个拓展。类似得还有很多其他思路的拓展也可以导出
+因此该复合模型可看作随机块模型的一个拓展。类似得还有很多其他思路的拓展也可以导出此充要条件，如 互测量 \cite{chen2016information}、 最小最大速率 \cite{zhang2016} 等。
+
+关于 SBM 模型算法错误率的一个误差上界在推导强恢复的充分条件时给出 \cite{abbe2015exact}，但有提升空间。
+此外，关于最大似然算法和最大模块度算法的联系之间已有学者进行了研究 \cite{newman2016equivalence}。
+最大模块度算法的优化目标是 NP 难的，最早使用贪心法近似求解 \cite{clauset2004finding}，后来有学者使用模拟退火的方法近似求解 \cite{he2016fast}。
+模拟退火的方法和 梅特罗波利斯 (Metropolis) 采样算法原理一样，只是表述不同，后者常用于 Ising 模型的采样 \cite{metropolis1953equation}。
 \section{课题研究内容}
 \section{研究方案}
 \section{工作特色及难点}
