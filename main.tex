@@ -115,9 +115,13 @@ Ising 模型是一种刻划节点状态的概率模型 \cite{ising1925beitrag}�
 最大模块度算法的优化目标是 NP 难的，最早使用贪心法近似求解 \cite{clauset2004finding}，后来有学者使用模拟退火的方法近似求解 \cite{he2016fast}。
 模拟退火的方法和 梅特罗波利斯 (Metropolis) 采样算法原理一样，只是表述不同，后者常用于 Ising 模型的采样 \cite{metropolis1953equation}。
 
-关于 SBM 的参数估计问题也有相关的研究工作。
+关于 SBM 的参数估计问题也有相关的研究工作。在弱恢复的场景下 Mossel 提出了参数 $(a,b)$ 的一个一致估计量
+\cite{mossel2015reconstruction}。对于比弱恢复更稠密的情形，通常可以先恢复节点的标签，再估计模型参数
+\cite{abbe2015recovering}。
+
 \subsection{有额外信息的随机块模型}
-通常添加额外信息外，基于随机块模型的社群发现能达到更高的准确率。
+通常添加额外信息外，基于随机块模型的社群发现能达到更高的准确率。通常额外信息具有多种形式，
+比如部分已知正常标签的节点，
 \section{课题研究内容}
 \section{研究方案}
 \section{工作特色及难点}
